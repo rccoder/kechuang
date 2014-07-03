@@ -5,7 +5,7 @@
 <div class="pagebox mb15">
 <div class="pagebox_hd"></div>
 <div class="pagebox_bd">
-<div class="place"><a href="/">首页</a> > <a href="<?php $my_id = 911;echo get_post($my_id)->guid;?>">标签</a> > <span><?php printf( __( '标签:“ %s ”的文章' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></span></div>
+<div class="place"><a href="/">首页</a> > <a href="<?php $my_id = 25;echo get_post($my_id)->guid;?>">标签</a> > <span><?php printf( __( '标签:“ %s ”的文章' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></span></div>
 </div>            
 <div class="pagebox_ft"></div>
 </div>

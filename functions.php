@@ -700,4 +700,12 @@ function get_author_class($comment_author_email,$user_id){
     else if($author_count>=300) 
         echo '<a class="vip7" target="_blank" href="/vip/" title="评论之星 LV.7"></a>'; 
 }}
+function remove_open_sans() {
+wp_deregister_style( 'open-sans' );
+wp_register_style( 'open-sans', false );
+wp_enqueue_style('open-sans','');
+}
+add_action( 'init', 'remove_open_sans' );
+//lianjie
+add_filter( 'pre_option_link_manager_enabled', '__return_true' ); 
 ?>
